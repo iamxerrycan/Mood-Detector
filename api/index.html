@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: "Audiowide", sans-serif;
+        }
+    </style>
+
+    <title>KNOW YOUR MOOD</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>WHAT DOES YOUR NAME SAY OBAUT YOUR MOOD ?</h1>
+        <div class="centerDiv">
+            <div class="details">
+
+                <label>ENTER YOUR NAME</label> <br>
+                <input type="text" name="" id="nameid">
+
+            </div>
+
+            <div class="imgdiv">
+
+                <img src="img.png" width="200" height="200" class="imgchange">
+
+
+
+
+            </div>
+
+
+            <button>Click me</button>
+
+
+
+
+        </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"
+        integrity="sha512-yBpuflZmP5lwMzZ03hiCLzA94N0K2vgBtJgqQ2E1meJzmIBfjbb7k4Y23k2i2c/rIeSUGc7jojyIY5waK3ZxCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('button').click(function () {
+
+                const name = $('#nameid').val();
+                alert(name);
+                $('.imgchange').attr('src', `https://avatars.dicebear.com/api/male/john.svg?mood[]=happy&mood[]=sad${name}`);
+
+            });
+
+
+            avatars.dicebear.com/api
+
+
+
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
